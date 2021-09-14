@@ -1,0 +1,46 @@
+body {
+  background: url(pyconau-2016-collage.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.jumbotron {
+    background-color: rgba(0,0,0,0.9);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+@font-face {
+    font-family: 'Flux Regular';
+    src: url('fonts/FLUXRegular.ttf');
+}
+
+.jumbotron h1 {
+    font-size: 3em;
+    font-family: 'Flux Regular';
+}
+
+#announcements {
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 6px;
+    padding: 2em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#announcements h2 {
+    font-size: 2em;
+    font-family: 'Flux Regular';
+}
