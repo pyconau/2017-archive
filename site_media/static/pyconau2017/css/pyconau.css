@@ -1,0 +1,190 @@
+body {
+  /* Unfortunately, we can't use django tags in here.  So, we'll pull the bg image in from within the body tag itself */
+  /* background: url({% static 'pyconau2017/images/pyconau-2016-collage.jpg' %}) no-repeat center center fixed; */
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #2b2b2b;
+  font-size: 14px;
+}
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.page-content {
+    background-color: rgba(255,255,255,1.0);
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 6px;
+    padding: 2em;
+    border: solid #15B 2px;
+}
+
+
+.jumbotron {
+    background-color: rgba(255,255,255,0.9);
+    color: #2b2b2b;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.jumbotron-white {
+    background-color: rgba(255,255,255,1.0);
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 6px;
+    padding: 2em;
+    border: solid #15B 2px;
+}
+
+@font-face {
+    font-family: 'Flux Regular';
+    src: url('fonts/FLUXRegular.ttf');
+}
+
+.jumbotron h1 {
+    font-size: 3em;
+    font-family: 'Flux Regular';
+}
+
+#announcements {
+    /*
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    */
+    border-radius: 6px;
+    padding: 2em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#announcements h2 {
+    font-size: 2em;
+    font-family: 'Flux Regular';
+    /*color: white;*/
+}
+
+/* getting nav bar sorted ... (n6) */
+
+nav {
+    background-color: #000;
+    width: 100%;
+    padding-top: 10px;
+    /*padding-bottom: 10px;*/
+    padding-left: 20px;
+}
+
+.l-header--nav  {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #a6e9f5;
+}
+
+.menu-dropdown {
+    background: #000000;
+    padding-top: 1rem;
+}
+
+.menu-dropdown .link-list {
+    padding-left: 0px;
+}
+
+#sponsors-sidebar {
+    border-radius: 6px;
+    padding: 1em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 150px;  /* this is a hack.  need to figure out exactly where (else) it's being set. */
+}
+
+.thumbnail {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    border: 0;
+
+}
+
+div.sponsor-list {
+  min-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+legend {
+  color: #a6e9f5;
+}
+
+.pad-buttons {
+  padding: 200px 0 20px 0;
+}
+
+.team-table {
+  width: 80%;
+}
+
+.dashboard-panel {
+  border: solid black 1px;
+  border-radius: 6px;
+  background-color: #eee;
+  padding: 20px 20px 20px 20px;
+  margin-top: 20px;
+}
+
+.btn__black {
+  color: black;
+  border-color: black;
+}
+
+.error-border {
+  border: solid #f12 5px;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.carousel-control,
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #24a;
+  background: none; !important
+}
+
+hr.proposal-title {
+  border: solid #888 1px;
+}
+
+table.prices td {
+  border-left: thin solid;
+}
+
+table.prices thead th {
+  vertical-align: top;
+  border-left: thin solid;
+}
+
+table.prices td.axis {
+  border: none;
+}
+
+table.prices td.price {
+  text-align: right;
+}
+
+table.prices td.addon,td.nope,td.included {
+  text-align: center;
+}
