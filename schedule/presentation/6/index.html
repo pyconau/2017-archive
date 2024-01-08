@@ -18,7 +18,7 @@
     
       <!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" -->
     
-    <title>PyCon AU 2017 | Presentation: Front-end integration testing with splinter</title>
+    <title>PyCon AU 2017 | Presentation: Programming Lego Mindstorms robots with Python</title>
 
     
       <link rel="canonical" href="https://pycon-au.org/">
@@ -770,10 +770,10 @@
 
   
 
-  <h2>Front-end integration testing with splinter</h2>
+  <h2>Programming Lego Mindstorms robots with Python</h2>
 
   <div class="abstract">
-    I like words. I vastly prefer writing an essay to drawing a picture, writing command line apps to writing GUI apps, and writing back-end API servers to writing front-end interactive web applications.<br><br>But what we prefer to do and what we need to get done aren't always the same thing, and even back-end developers will sometimes need to put together a basic interactive front-end, and the related test cases to make sure it keeps working as intended.<br><br>Fortunately for us, the `splinter` web application testing library offers the necessary tools for even the most JavaScript-averse developer to get started writing automated tests for their front-end components, and this presentation will walk through the essentials of getting set up to write behavioural tests for an interactive front-end as easily as you do for your back-end API server.
+    We love Python and we (most likely) love Lego, so what's not to love about programming Lego robots with Python? <br><br>[Lego Mindstorms EV3](https://www.lego.com/en-us/mindstorms) is the latest programmable robotics kit released by Lego. It comes with a controller brick, sensors, motors and Technic Lego parts. There are tens of detailed official [projects](https://www.lego.com/en-us/mindstorms/build-a-robot) describing step by step how to build bots and program them. There are hundreds more [fan projects](https://www.lego.com/en-us/mindstorms/gallery) available for inspiration. <br><br>Officially Mindstorms are programmed in [LabVIEW](http://www.ni.com/labview). LabVIEW is graphical programming language, which makes it easy for non-programmers to write instructions for their bots. <br><br>We are not "non-programmers", so the good news is that the controller brick can boot from a micro SD card, which allows us to run [ev3dev](http://www.ev3dev.org/), a Debian Linux-based operating system. This is the key to running Python on Lego Mindstorms. <br><br>In this presentation you will learn:<br><br>* what is possible to build with Lego Mindstorms<br>* how to run the ev3dev on your bot and how to connect to it<br>* how to control the motors and sensors with Python<br>* about popular third party suppliers<br>* how to extend your Python EV3 library to support new sensors<br>* how to run a Jupyter Notebook and control your bot remotely (don't ask about security).<br><br>Come and learn the basics, then program your bots and (optionally) take over the world.
   </div>
 
   <h2>Presented by</h2>
@@ -782,18 +782,18 @@
     
   <div class="right-floating-image" >
     <div class="portrait">
-      <div style="background-image: url('https://secure.gravatar.com/avatar/f3ba3ecffd20251d73749afbfa636786');" class="portrait--img"></div>
+      <div style="background-image: url('https://secure.gravatar.com/avatar/2d0724431d82a1499053d4318b0d8f1d');" class="portrait--img"></div>
     </div>
   </div>
     
 
-    <h3>Nick Coghlan</h3> <!--- <a href="/speaker/profile/s.id/"> -->
+    <h3>Stoyan Shopov</h3> <!--- <a href="/speaker/profile/s.id/"> -->
 
     
       <p><div class="btn-group">
         
         
-          <a href="https://twitter.com/ncoghlan_dev" class="btn-svg" title="Nick Coghlan on twitter">
+          <a href="https://twitter.com/hrastche" class="btn-svg" title="Stoyan Shopov on twitter">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
     <defs>
         <style>
@@ -821,11 +821,45 @@
         
         
 
+      <p><div class="btn-group">
+        
+        <a href="https://sshopov.github.io/notes/" class="btn-svg" title="Homepage">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
+<defs>
+    <style>
+        .web-cls-1 {
+            fill: none;
+        }
+
+        .web-cls-2 {
+            clip-path: url(#clip-path);
+        }
+
+        .web-cls-3 {
+            fill: currentColor;
+        }
+    </style>
+    <clipPath id="clip-path">
+        <rect class="web-cls-1" width="57" height="57"></rect>
+    </clipPath>
+</defs>
+<title>website</title>
+<g class="web-cls-2">
+    <path class="web-cls-3" d="M33.78,43.33A9.74,9.74,0,0,1,27,40.49l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.09,1.09,0,0,1,1.59,0l2.84,2.84a5,5,0,1,0,7-7l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.1,1.1,0,0,1,1.59,0l2.84,2.84a9.56,9.56,0,0,1,2.84,6.82,9.41,9.41,0,0,1-9.44,9.44M23.21,24.81l1.59-1.59a1.09,1.09,0,0,1,1.59,0l7.5,7.5a1.09,1.09,0,0,1,0,1.59L32.3,33.9a1.09,1.09,0,0,1-1.59,0l-7.5-7.5a1.09,1.09,0,0,1,0-1.59m-0.57,6.48-1.59,1.59a1.1,1.1,0,0,1-1.59,0L16.62,30a9.56,9.56,0,0,1,6.71-16.37,9.72,9.72,0,0,1,6.82,2.84L33,19.35a1.09,1.09,0,0,1,0,1.59L31.4,22.53a1.1,1.1,0,0,1-1.6,0L27,19.69a5,5,0,0,0-3.52-1.48,5,5,0,0,0-5,5,5,5,0,0,0,1.48,3.52l2.84,2.84a1.81,1.81,0,0,1-.11,1.7M28.5,0A28.5,28.5,0,1,0,57,28.5,28.5,28.5,0,0,0,28.5,0"></path>
+</g>
+</svg>
+
+        </a>
+      
+      
+    </div></p>
+        
+
           </a>
         
       </div></p>
     
-      <p>Nick is a CPython core developer, BDFL-Delegate for Python packaging interoperability standards, and a founding member of the PSF's Python Packaging Working Group.<br><br>As a member of Red Hat's Platform Engineering team, he works on software supply chain management toooling like release-monitoring.org for Fedora and Red Hat Enterprise Linux.</p>
+      <p>Stoyan used to be a clown in the circus and has found this very handy both in navigating the corporate life and raising his kids. He applies the same ~~agile~~ slapstick approach to his coding and Python helps him to succeed fast and to succeed often.\nWhen not getting his dopamine fix with "pip install", Stoyan can be found hacking Lego with his son or hanging off a trapeze with his daughter.</p>
     <br clear="all" />
 
   

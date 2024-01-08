@@ -18,7 +18,7 @@
     
       <!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" -->
     
-    <title>PyCon AU 2017 | Presentation: Front-end integration testing with splinter</title>
+    <title>PyCon AU 2017 | Presentation: Remote DNA Sequencing and Analysis; Nanopore sequencing, FPGA boards and a fortunate Epiphany</title>
 
     
       <link rel="canonical" href="https://pycon-au.org/">
@@ -770,10 +770,10 @@
 
   
 
-  <h2>Front-end integration testing with splinter</h2>
+  <h2>Remote DNA Sequencing and Analysis; Nanopore sequencing, FPGA boards and a fortunate Epiphany</h2>
 
   <div class="abstract">
-    I like words. I vastly prefer writing an essay to drawing a picture, writing command line apps to writing GUI apps, and writing back-end API servers to writing front-end interactive web applications.<br><br>But what we prefer to do and what we need to get done aren't always the same thing, and even back-end developers will sometimes need to put together a basic interactive front-end, and the related test cases to make sure it keeps working as intended.<br><br>Fortunately for us, the `splinter` web application testing library offers the necessary tools for even the most JavaScript-averse developer to get started writing automated tests for their front-end components, and this presentation will walk through the essentials of getting set up to write behavioural tests for an interactive front-end as easily as you do for your back-end API server.
+    ​** What is a MinION? **<br>Oxford Nanopore's MinION is a 91g portable sequencing device, which has been a huge talking point in the sequencing community since entering the market in 2014. First thought of as having potential, it's now recognised as a valuable asset of any genomic laboratory.<br>The MinION can deliver long-read yields as great as its competitor PacBio. This is due to its yield per flowcell increasing 10-fold in the past 18 months, which has created much delight to the community albeit some problems for researchers (and ONT themselves) when it comes to data handling and analysis.<br><br>** Current Restrictions **<br>The raw output from a MinION is an electrical signal over-time which must be put through a computationally-intensive RNN to infer the nucleotides of a given DNA strand -  this process is known as basecalling. If one were to do this on a normal laptop, it would take over a week to complete all the reads from a 48-hour run, which hinders the real-time component of the MinION technology. In order to keep the basecall processing at the same rate as the throughput, the MinION output needs to be transferred to a high powered server, which hinders on the MinION's portability.<br><br>** How to overcome this? **<br>Running reads simultaneously through this basecalling processing is a must when it comes to real-time Nanopore sequencing, which is why we combine ONT with another start-up project, Adapteva's Parallela board, a credit card sized micro-server with an in-built FPGA board, ideal for parallel processing. We explore the compatability of the Parallela and the MinION, with the aim of performing both sequencing and analysis in a remote environment.
   </div>
 
   <h2>Presented by</h2>
@@ -782,18 +782,18 @@
     
   <div class="right-floating-image" >
     <div class="portrait">
-      <div style="background-image: url('https://secure.gravatar.com/avatar/f3ba3ecffd20251d73749afbfa636786');" class="portrait--img"></div>
+      <div style="background-image: url('https://secure.gravatar.com/avatar/6e735355fb38faa6d2299c5719107571');" class="portrait--img"></div>
     </div>
   </div>
     
 
-    <h3>Nick Coghlan</h3> <!--- <a href="/speaker/profile/s.id/"> -->
+    <h3>Alexis Lucattini</h3> <!--- <a href="/speaker/profile/s.id/"> -->
 
     
       <p><div class="btn-group">
         
         
-          <a href="https://twitter.com/ncoghlan_dev" class="btn-svg" title="Nick Coghlan on twitter">
+          <a href="https://twitter.com/Lexisomes" class="btn-svg" title="Alexis Lucattini on twitter">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
     <defs>
         <style>
@@ -825,7 +825,7 @@
         
       </div></p>
     
-      <p>Nick is a CPython core developer, BDFL-Delegate for Python packaging interoperability standards, and a founding member of the PSF's Python Packaging Working Group.<br><br>As a member of Red Hat's Platform Engineering team, he works on software supply chain management toooling like release-monitoring.org for Fedora and Red Hat Enterprise Linux.</p>
+      <p>Alexis Lucattini - Australian Genome Research Facility<br><br>Academia and Research<br><br>Alexis graduated with a Masters of Bioinformatics at the University of Melbourne in 2016. During this time he completed his research component of the course at the Australian Genome Research Facility with collaboration with the Walter &amp; Eliza Hall Institute. His research explored the applications of Oxford Nanopore's MinION, the world's first portable DNA sequencer, weighing only 91 grams. Since completion of his MastersAl, Alexis has worked as a Bioinformatics Officer at the Australian Genome Research Facility and spends some of his working hours continuing his work with the MinION.<br><br>It fits in your pocket so you can take it anywhere!<br><br>Alexis played a key role in developing the bioinformatics tutorials, and overall organsing for PoreCampAU 2017, the first Ausrtalian based workshop focusing on using the MinION to interested researchers. \nAlexis also spent time at the World Government Summit 2017 in Dubai demonstrating the MinION to world leaders as part of the Metasub team.<br><br>Computer Biography<br><br>Alexis, by-no-stretch has a computer programming background. His family computer was a Windows 95 with 128 MB of RAM until around 2003 and then Windows XP until he left for college in 2011. His Bachelor of Biomedicine also didn't provide a satisfactory amount of IT skills. Alexis was required to pick up programming rather suddenly when completing his research project which is when he fell in love with the beautiful python programming language. When Alexis isn't tinkering with MinION protocols and pipelines, he's working on custom RNA-Seq projects and service pipelines used within the AGRF.<br><br>Contact Information<br><br>Email: Alexis.Lucattini@agrf.org.au\nTwitter: @Lexisomes</p>
     <br clear="all" />
 
   

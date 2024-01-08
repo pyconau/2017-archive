@@ -18,7 +18,7 @@
     
       <!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" -->
     
-    <title>PyCon AU 2017 | Presentation: Front-end integration testing with splinter</title>
+    <title>PyCon AU 2017 | Presentation: Loop better: a deeper look at iteration in Python</title>
 
     
       <link rel="canonical" href="https://pycon-au.org/">
@@ -770,10 +770,10 @@
 
   
 
-  <h2>Front-end integration testing with splinter</h2>
+  <h2>Loop better: a deeper look at iteration in Python</h2>
 
   <div class="abstract">
-    I like words. I vastly prefer writing an essay to drawing a picture, writing command line apps to writing GUI apps, and writing back-end API servers to writing front-end interactive web applications.<br><br>But what we prefer to do and what we need to get done aren't always the same thing, and even back-end developers will sometimes need to put together a basic interactive front-end, and the related test cases to make sure it keeps working as intended.<br><br>Fortunately for us, the `splinter` web application testing library offers the necessary tools for even the most JavaScript-averse developer to get started writing automated tests for their front-end components, and this presentation will walk through the essentials of getting set up to write behavioural tests for an interactive front-end as easily as you do for your back-end API server.
+    What's the difference between an iterable, an iterator, and a generator?  Do you know how to create infinitely long iterables?<br> Come to this talk to learn some of Python's slightly more advanced looping techniques.<br><br>Iterables are a very big deal in Python and they became even more important in Python 3.  There's quite a bit beyond the basics when it comes to loops and looping in Python.  Let's learn some of Python's slightly more advanced looping techniques!<br><br>In this session, we'll take a step back and learn about how looping actually works in Python.  We'll then learn about a number of Python looping techniques that you've probably overlooked.<br><br>We'll learn about the difference between sequences, iterables, and iterators.  We'll also reveal the iterator protocol that powers for loops in Python.<br><br>After we learn the basics, we'll learn some techniques for working with infinite infinite iterables, generators, and generator expressions.<br><br>Attendees will walk away from this session with specific actionable recommendations for refactoring their own code as well as a wealth of new topics to look deeper into after the session.
   </div>
 
   <h2>Presented by</h2>
@@ -782,18 +782,18 @@
     
   <div class="right-floating-image" >
     <div class="portrait">
-      <div style="background-image: url('https://secure.gravatar.com/avatar/f3ba3ecffd20251d73749afbfa636786');" class="portrait--img"></div>
+      <div style="background-image: url('https://secure.gravatar.com/avatar/93a988bd85040f58f8417dc4be78c7de');" class="portrait--img"></div>
     </div>
   </div>
     
 
-    <h3>Nick Coghlan</h3> <!--- <a href="/speaker/profile/s.id/"> -->
+    <h3>Trey Hunner</h3> <!--- <a href="/speaker/profile/s.id/"> -->
 
     
       <p><div class="btn-group">
         
         
-          <a href="https://twitter.com/ncoghlan_dev" class="btn-svg" title="Nick Coghlan on twitter">
+          <a href="https://twitter.com/treyhunner" class="btn-svg" title="Trey Hunner on twitter">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
     <defs>
         <style>
@@ -821,11 +821,45 @@
         
         
 
+      <p><div class="btn-group">
+        
+        <a href="http://treyhunner.com" class="btn-svg" title="Homepage">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
+<defs>
+    <style>
+        .web-cls-1 {
+            fill: none;
+        }
+
+        .web-cls-2 {
+            clip-path: url(#clip-path);
+        }
+
+        .web-cls-3 {
+            fill: currentColor;
+        }
+    </style>
+    <clipPath id="clip-path">
+        <rect class="web-cls-1" width="57" height="57"></rect>
+    </clipPath>
+</defs>
+<title>website</title>
+<g class="web-cls-2">
+    <path class="web-cls-3" d="M33.78,43.33A9.74,9.74,0,0,1,27,40.49l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.09,1.09,0,0,1,1.59,0l2.84,2.84a5,5,0,1,0,7-7l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.1,1.1,0,0,1,1.59,0l2.84,2.84a9.56,9.56,0,0,1,2.84,6.82,9.41,9.41,0,0,1-9.44,9.44M23.21,24.81l1.59-1.59a1.09,1.09,0,0,1,1.59,0l7.5,7.5a1.09,1.09,0,0,1,0,1.59L32.3,33.9a1.09,1.09,0,0,1-1.59,0l-7.5-7.5a1.09,1.09,0,0,1,0-1.59m-0.57,6.48-1.59,1.59a1.1,1.1,0,0,1-1.59,0L16.62,30a9.56,9.56,0,0,1,6.71-16.37,9.72,9.72,0,0,1,6.82,2.84L33,19.35a1.09,1.09,0,0,1,0,1.59L31.4,22.53a1.1,1.1,0,0,1-1.6,0L27,19.69a5,5,0,0,0-3.52-1.48,5,5,0,0,0-5,5,5,5,0,0,0,1.48,3.52l2.84,2.84a1.81,1.81,0,0,1-.11,1.7M28.5,0A28.5,28.5,0,1,0,57,28.5,28.5,28.5,0,0,0,28.5,0"></path>
+</g>
+</svg>
+
+        </a>
+      
+      
+    </div></p>
+        
+
           </a>
         
       </div></p>
     
-      <p>Nick is a CPython core developer, BDFL-Delegate for Python packaging interoperability standards, and a founding member of the PSF's Python Packaging Working Group.<br><br>As a member of Red Hat's Platform Engineering team, he works on software supply chain management toooling like release-monitoring.org for Fedora and Red Hat Enterprise Linux.</p>
+      <p>Trey Hunner is a Python/Django teacher, trainer, and mentor. He is a director at the Python Software Foundation, a member of the Django Software Foundation, and is heavily involved with his local Python meetup group in San Diego.<br><br>Trey holds corporate training sessions on Python and Django by day and hosts live online teaching sessions for Python learners during nights and weekends.</p>
     <br clear="all" />
 
   

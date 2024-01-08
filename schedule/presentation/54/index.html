@@ -18,7 +18,7 @@
     
       <!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" -->
     
-    <title>PyCon AU 2017 | Presentation: Front-end integration testing with splinter</title>
+    <title>PyCon AU 2017 | Presentation: Bowerbirds of Technology: Architecture and Operations at Less-Than-Facebook Scale</title>
 
     
       <link rel="canonical" href="https://pycon-au.org/">
@@ -770,10 +770,10 @@
 
   
 
-  <h2>Front-end integration testing with splinter</h2>
+  <h2>Bowerbirds of Technology: Architecture and Operations at Less-Than-Facebook Scale</h2>
 
   <div class="abstract">
-    I like words. I vastly prefer writing an essay to drawing a picture, writing command line apps to writing GUI apps, and writing back-end API servers to writing front-end interactive web applications.<br><br>But what we prefer to do and what we need to get done aren't always the same thing, and even back-end developers will sometimes need to put together a basic interactive front-end, and the related test cases to make sure it keeps working as intended.<br><br>Fortunately for us, the `splinter` web application testing library offers the necessary tools for even the most JavaScript-averse developer to get started writing automated tests for their front-end components, and this presentation will walk through the essentials of getting set up to write behavioural tests for an interactive front-end as easily as you do for your back-end API server.
+    Facebook, Google, Uber, LinkedIn, and friends are the rarefied heights of software engineering. They encounter and solve problems at scales shared by few others, and as a result, their priorities in production engineering and architecture are just a bit different from the rest of us down here in the other 99% of services. Even as a lead engineer for Twilio, I rarely deal with the same uncharted territories of scale explored by these truly massive systems. Through deconstructing a few blog posts from these giants, we’ll evaluate just what is it that they’re thinking about when they build systems, why they make the choices they do, and whether any of those choices are relevant to those of us operating at high scale yet still something less than millions of requests per second.<br><br>This talk will go into depth on how to evaluate, choose, and deploy technology to meet your customers’ requirements without requiring a small army of engineers to answer 2 AM pages. We’ll go through what you should think about when picking open-source systems (as well as hosted PaaS/IaaS/SaaS providers) to meet your needs: maintainership, extensibility, security, stability, and more. <br><br>We’ll also talk about how to pick realistic goals for your project and business: what are the implications of claiming five nines for the person carrying the pager? How will you communicate with your customers when you’re throwing errors and breaking SLAs? What does disaster recovery mean for your systems, and how much effort will it require to implement and test your DR plan (ahead of time!)?<br><br>With these guidelines in mind, you should be better equipped to say no (or yes!) the next time your team’s software hipster proposes moving everything to the Next Big Thing.
   </div>
 
   <h2>Presented by</h2>
@@ -782,18 +782,18 @@
     
   <div class="right-floating-image" >
     <div class="portrait">
-      <div style="background-image: url('https://secure.gravatar.com/avatar/f3ba3ecffd20251d73749afbfa636786');" class="portrait--img"></div>
+      <div style="background-image: url('https://secure.gravatar.com/avatar/acfec4e7bf83dc08f39e0844b222a8bc');" class="portrait--img"></div>
     </div>
   </div>
     
 
-    <h3>Nick Coghlan</h3> <!--- <a href="/speaker/profile/s.id/"> -->
+    <h3>Sam Kitajima-Kimbrel</h3> <!--- <a href="/speaker/profile/s.id/"> -->
 
     
       <p><div class="btn-group">
         
         
-          <a href="https://twitter.com/ncoghlan_dev" class="btn-svg" title="Nick Coghlan on twitter">
+          <a href="https://twitter.com/skimbrel" class="btn-svg" title="Sam Kitajima-Kimbrel on twitter">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
     <defs>
         <style>
@@ -821,11 +821,45 @@
         
         
 
+      <p><div class="btn-group">
+        
+        <a href="https://www.samkimbrel.com" class="btn-svg" title="Homepage">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
+<defs>
+    <style>
+        .web-cls-1 {
+            fill: none;
+        }
+
+        .web-cls-2 {
+            clip-path: url(#clip-path);
+        }
+
+        .web-cls-3 {
+            fill: currentColor;
+        }
+    </style>
+    <clipPath id="clip-path">
+        <rect class="web-cls-1" width="57" height="57"></rect>
+    </clipPath>
+</defs>
+<title>website</title>
+<g class="web-cls-2">
+    <path class="web-cls-3" d="M33.78,43.33A9.74,9.74,0,0,1,27,40.49l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.09,1.09,0,0,1,1.59,0l2.84,2.84a5,5,0,1,0,7-7l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.1,1.1,0,0,1,1.59,0l2.84,2.84a9.56,9.56,0,0,1,2.84,6.82,9.41,9.41,0,0,1-9.44,9.44M23.21,24.81l1.59-1.59a1.09,1.09,0,0,1,1.59,0l7.5,7.5a1.09,1.09,0,0,1,0,1.59L32.3,33.9a1.09,1.09,0,0,1-1.59,0l-7.5-7.5a1.09,1.09,0,0,1,0-1.59m-0.57,6.48-1.59,1.59a1.1,1.1,0,0,1-1.59,0L16.62,30a9.56,9.56,0,0,1,6.71-16.37,9.72,9.72,0,0,1,6.82,2.84L33,19.35a1.09,1.09,0,0,1,0,1.59L31.4,22.53a1.1,1.1,0,0,1-1.6,0L27,19.69a5,5,0,0,0-3.52-1.48,5,5,0,0,0-5,5,5,5,0,0,0,1.48,3.52l2.84,2.84a1.81,1.81,0,0,1-.11,1.7M28.5,0A28.5,28.5,0,1,0,57,28.5,28.5,28.5,0,0,0,28.5,0"></path>
+</g>
+</svg>
+
+        </a>
+      
+      
+    </div></p>
+        
+
           </a>
         
       </div></p>
     
-      <p>Nick is a CPython core developer, BDFL-Delegate for Python packaging interoperability standards, and a founding member of the PSF's Python Packaging Working Group.<br><br>As a member of Red Hat's Platform Engineering team, he works on software supply chain management toooling like release-monitoring.org for Fedora and Red Hat Enterprise Linux.</p>
+      <p>Sam Kitajima-Kimbrel is a software engineer with many feels about distributed systems, data routing and storage, and usable APIs. He currently leads Twilio's Data Platform team, building scalable and reusable data infrastructure to support a 400-person R&amp;D organization. Sam has a different hair color every month, enjoys cycling and cooking, and resides in the San Francisco Bay Area with his husband Kameron and their dogs Basil and Mochi.</p>
     <br clear="all" />
 
   

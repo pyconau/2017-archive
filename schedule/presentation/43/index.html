@@ -18,7 +18,7 @@
     
       <!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" -->
     
-    <title>PyCon AU 2017 | Presentation: Front-end integration testing with splinter</title>
+    <title>PyCon AU 2017 | Presentation: Mocking: virtual reality for your Python tests</title>
 
     
       <link rel="canonical" href="https://pycon-au.org/">
@@ -770,10 +770,10 @@
 
   
 
-  <h2>Front-end integration testing with splinter</h2>
+  <h2>Mocking: virtual reality for your Python tests</h2>
 
   <div class="abstract">
-    I like words. I vastly prefer writing an essay to drawing a picture, writing command line apps to writing GUI apps, and writing back-end API servers to writing front-end interactive web applications.<br><br>But what we prefer to do and what we need to get done aren't always the same thing, and even back-end developers will sometimes need to put together a basic interactive front-end, and the related test cases to make sure it keeps working as intended.<br><br>Fortunately for us, the `splinter` web application testing library offers the necessary tools for even the most JavaScript-averse developer to get started writing automated tests for their front-end components, and this presentation will walk through the essentials of getting set up to write behavioural tests for an interactive front-end as easily as you do for your back-end API server.
+    Unit tests: they are fast, easy to write and protect your code against future bugs. But what happens when unit tests depend on modules you don't want to test? Or even when they depend on external APIs you cannot use while testing? That's where mocking comes in. The `unittest.mock` module lets you mimic behavior for your test dependencies. It also gives you tools to make sure your code calls its dependencies at the right places and with the right arguments.<br><br>This talk will use a set of examples to showcase what the `mock` module can do, and how to make use of it in your tests. We will cover mocking functions, objects and modules, as well as various caveats and recipes for mocking Python code.
   </div>
 
   <h2>Presented by</h2>
@@ -782,18 +782,18 @@
     
   <div class="right-floating-image" >
     <div class="portrait">
-      <div style="background-image: url('https://secure.gravatar.com/avatar/f3ba3ecffd20251d73749afbfa636786');" class="portrait--img"></div>
+      <div style="background-image: url('https://secure.gravatar.com/avatar/4dbc4780bee164ef830c28e9edcaadd6');" class="portrait--img"></div>
     </div>
   </div>
     
 
-    <h3>Nick Coghlan</h3> <!--- <a href="/speaker/profile/s.id/"> -->
+    <h3>Raphael Merx</h3> <!--- <a href="/speaker/profile/s.id/"> -->
 
     
       <p><div class="btn-group">
         
         
-          <a href="https://twitter.com/ncoghlan_dev" class="btn-svg" title="Nick Coghlan on twitter">
+          <a href="https://twitter.com/raphaelmerx" class="btn-svg" title="Raphael Merx on twitter">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
     <defs>
         <style>
@@ -821,11 +821,45 @@
         
         
 
+      <p><div class="btn-group">
+        
+        <a href="https://github.com/raphaelmerx" class="btn-svg" title="Homepage">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
+<defs>
+    <style>
+        .web-cls-1 {
+            fill: none;
+        }
+
+        .web-cls-2 {
+            clip-path: url(#clip-path);
+        }
+
+        .web-cls-3 {
+            fill: currentColor;
+        }
+    </style>
+    <clipPath id="clip-path">
+        <rect class="web-cls-1" width="57" height="57"></rect>
+    </clipPath>
+</defs>
+<title>website</title>
+<g class="web-cls-2">
+    <path class="web-cls-3" d="M33.78,43.33A9.74,9.74,0,0,1,27,40.49l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.09,1.09,0,0,1,1.59,0l2.84,2.84a5,5,0,1,0,7-7l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.1,1.1,0,0,1,1.59,0l2.84,2.84a9.56,9.56,0,0,1,2.84,6.82,9.41,9.41,0,0,1-9.44,9.44M23.21,24.81l1.59-1.59a1.09,1.09,0,0,1,1.59,0l7.5,7.5a1.09,1.09,0,0,1,0,1.59L32.3,33.9a1.09,1.09,0,0,1-1.59,0l-7.5-7.5a1.09,1.09,0,0,1,0-1.59m-0.57,6.48-1.59,1.59a1.1,1.1,0,0,1-1.59,0L16.62,30a9.56,9.56,0,0,1,6.71-16.37,9.72,9.72,0,0,1,6.82,2.84L33,19.35a1.09,1.09,0,0,1,0,1.59L31.4,22.53a1.1,1.1,0,0,1-1.6,0L27,19.69a5,5,0,0,0-3.52-1.48,5,5,0,0,0-5,5,5,5,0,0,0,1.48,3.52l2.84,2.84a1.81,1.81,0,0,1-.11,1.7M28.5,0A28.5,28.5,0,1,0,57,28.5,28.5,28.5,0,0,0,28.5,0"></path>
+</g>
+</svg>
+
+        </a>
+      
+      
+    </div></p>
+        
+
           </a>
         
       </div></p>
     
-      <p>Nick is a CPython core developer, BDFL-Delegate for Python packaging interoperability standards, and a founding member of the PSF's Python Packaging Working Group.<br><br>As a member of Red Hat's Platform Engineering team, he works on software supply chain management toooling like release-monitoring.org for Fedora and Red Hat Enterprise Linux.</p>
+      <p>Rapha discovered Python in high school and never looked back. He has used Python for academic research, machine learning and more recently web development. After working for startups in California, he moved to Timor-Leste where he works on aid projects for Catalpa International. He is a Django contributor and a general open source enthusiast. When the Timorese Internet goes down, you can find him freediving and practicing his broken Tetun.</p>
     <br clear="all" />
 
   

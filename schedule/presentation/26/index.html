@@ -18,7 +18,7 @@
     
       <!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" -->
     
-    <title>PyCon AU 2017 | Presentation: Front-end integration testing with splinter</title>
+    <title>PyCon AU 2017 | Presentation: Hot reloading Python web-servers at scale</title>
 
     
       <link rel="canonical" href="https://pycon-au.org/">
@@ -770,10 +770,10 @@
 
   
 
-  <h2>Front-end integration testing with splinter</h2>
+  <h2>Hot reloading Python web-servers at scale</h2>
 
   <div class="abstract">
-    I like words. I vastly prefer writing an essay to drawing a picture, writing command line apps to writing GUI apps, and writing back-end API servers to writing front-end interactive web applications.<br><br>But what we prefer to do and what we need to get done aren't always the same thing, and even back-end developers will sometimes need to put together a basic interactive front-end, and the related test cases to make sure it keeps working as intended.<br><br>Fortunately for us, the `splinter` web application testing library offers the necessary tools for even the most JavaScript-averse developer to get started writing automated tests for their front-end components, and this presentation will walk through the essentials of getting set up to write behavioural tests for an interactive front-end as easily as you do for your back-end API server.
+    Every web application involves continuous changes to the server. It could vary from minor bug fixes, small feature improvements, to major feature releases. How to keep serving your users while replacing your app with a newer version is a problem everybody has to face. It's like replacing car wheels while driving at a full speed. One common practice for rolling out changes to production is turning down a few percentage of the servers and rotate until all changes have been updated on all servers. This common approach is, however, not ideal: it requires either non-trivial amount of extra resources dedicated for rollout, or significant overhead of rollout complexity and speed in case the reserved resource is falling short. More ideally, there's the “hot reload” land, where you can push changes with the same speed or even faster, and no extra resource required. We're going to talk about how Instagram got there.<br><br>In this talk, we're going to talk about the benefits of hot reload, and the path we took to get there, and the efforts to make it scale to thousands of servers. It requires no extra resources, even at a machine level, and minimal overhead, which means you could run your servers to nearly full utilization and can still roll out your code changes. With the new deployment system, we not only saved a ton of servers, but also made our continuous rollout faster by enabling full parallelism, thus scaling code rollout to more simultaneous changes, more developers, and in turn, more users.
   </div>
 
   <h2>Presented by</h2>
@@ -782,18 +782,18 @@
     
   <div class="right-floating-image" >
     <div class="portrait">
-      <div style="background-image: url('https://secure.gravatar.com/avatar/f3ba3ecffd20251d73749afbfa636786');" class="portrait--img"></div>
+      <div style="background-image: url('https://secure.gravatar.com/avatar/2f27694d187d22dd10d28399c81c0b2d');" class="portrait--img"></div>
     </div>
   </div>
     
 
-    <h3>Nick Coghlan</h3> <!--- <a href="/speaker/profile/s.id/"> -->
+    <h3>Chenyang Wu</h3> <!--- <a href="/speaker/profile/s.id/"> -->
 
     
       <p><div class="btn-group">
         
         
-          <a href="https://twitter.com/ncoghlan_dev" class="btn-svg" title="Nick Coghlan on twitter">
+          <a href="https://twitter.com/hakkwu" class="btn-svg" title="Chenyang Wu on twitter">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
     <defs>
         <style>
@@ -825,7 +825,7 @@
         
       </div></p>
     
-      <p>Nick is a CPython core developer, BDFL-Delegate for Python packaging interoperability standards, and a founding member of the PSF's Python Packaging Working Group.<br><br>As a member of Red Hat's Platform Engineering team, he works on software supply chain management toooling like release-monitoring.org for Fedora and Red Hat Enterprise Linux.</p>
+      <p>A hacker, a programmer, currently working at Facebook &amp; Instagram. Worked on some low-level Python projects, loved playing with fancy and abstract features of languages. Infamous as "GC killer".</p>
     <br clear="all" />
 
   

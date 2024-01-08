@@ -18,7 +18,7 @@
     
       <!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" -->
     
-    <title>PyCon AU 2017 | Presentation: Front-end integration testing with splinter</title>
+    <title>PyCon AU 2017 | Presentation: Secrets of a WSGI master.</title>
 
     
       <link rel="canonical" href="https://pycon-au.org/">
@@ -770,10 +770,10 @@
 
   
 
-  <h2>Front-end integration testing with splinter</h2>
+  <h2>Secrets of a WSGI master.</h2>
 
   <div class="abstract">
-    I like words. I vastly prefer writing an essay to drawing a picture, writing command line apps to writing GUI apps, and writing back-end API servers to writing front-end interactive web applications.<br><br>But what we prefer to do and what we need to get done aren't always the same thing, and even back-end developers will sometimes need to put together a basic interactive front-end, and the related test cases to make sure it keeps working as intended.<br><br>Fortunately for us, the `splinter` web application testing library offers the necessary tools for even the most JavaScript-averse developer to get started writing automated tests for their front-end components, and this presentation will walk through the essentials of getting set up to write behavioural tests for an interactive front-end as easily as you do for your back-end API server.
+    The WSGI (Web Server Gateway Interface) specification for hosting Python web applications was created in 2003. Measured in Internet time, it is ancient. The oldest main stream implementation of the WSGI specification is mod_wsgi, for the Apache HTTPD server and it is 10 years old.<br><br>WSGI is starting to be regarded as not up to the job, with technologies such as HTTP/2, web sockets and async dispatching being the way forward. Reality is that WSGI will be around for quite some time yet and for the majority of use cases is more than adequate.<br><br>The real problem is not that we need to move to these new technologies, but that we aren't using the current WSGI servers to their best advantage. Moving to a new set of technologies will not necessarily make things better and will only create a new set of problems you have to solve.<br><br>As one of the oldest WSGI server implementations, Apache and mod_wsgi may be regarded as boring and not cool, but it is still the most stable option for hosting WSGI applications available. It also hasn't been sitting still, with a considerable amount of development work being done on mod_wsgi in the last few years to make it even more robust and easier to use in a development environment as well as production, including in containerised environments.<br><br>In this talk you will learn about many features of mod_wsgi which you probably didn't even know existed, features which can help towards ensuring your Python web application deployment performs to its best, is secure, and has a low maintenance burden.<br><br>Topics which will be covered include:<br><br>* Easy deployment of Python web applications using mod_wsgi-express.<br>* Integration of mod_wsgi-express with a Django web application.<br>* Using mod_wsgi-express in a development environment.<br>* How to make use of mod_wsgi-express in a production environment.<br>* Using mod_wsgi-express in a containerised runtime environment.<br>* Ensuring consistency between development and production environments using warpdrive.<br>* Using mod_wsgi-express to bootstrap a system Apache installation for hosting WSGI applications.<br>* Why you should be using daemon mode of mod_wsgi and not embedded mode.<br>* How to properly associate mod_wsgi with a Python virtual environment.<br>* Building a robust deployment that can recover from misbehaving application code, backend services, or request overloading.<br>* Using hooks provided by mod_wsgi to monitor the performance of your Python web application.<br><br>If you are a beginner, come learn why mod_wsgi is still a good option for deploying your Python web applications. If you are an old time user of mod_wsgi, find out about all the features you probably didn't know existed, revisit your current Python web application deployment and make it even better.
   </div>
 
   <h2>Presented by</h2>
@@ -782,18 +782,18 @@
     
   <div class="right-floating-image" >
     <div class="portrait">
-      <div style="background-image: url('https://secure.gravatar.com/avatar/f3ba3ecffd20251d73749afbfa636786');" class="portrait--img"></div>
+      <div style="background-image: url('https://secure.gravatar.com/avatar/80f27a3d70a3b9b49bc7b9eb3a5b2f05');" class="portrait--img"></div>
     </div>
   </div>
     
 
-    <h3>Nick Coghlan</h3> <!--- <a href="/speaker/profile/s.id/"> -->
+    <h3>Graham Dumpleton</h3> <!--- <a href="/speaker/profile/s.id/"> -->
 
     
       <p><div class="btn-group">
         
         
-          <a href="https://twitter.com/ncoghlan_dev" class="btn-svg" title="Nick Coghlan on twitter">
+          <a href="https://twitter.com/GrahamDumpleton" class="btn-svg" title="Graham Dumpleton on twitter">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
     <defs>
         <style>
@@ -821,11 +821,45 @@
         
         
 
+      <p><div class="btn-group">
+        
+        <a href="http://blog.dscpl.com.au" class="btn-svg" title="Homepage">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
+<defs>
+    <style>
+        .web-cls-1 {
+            fill: none;
+        }
+
+        .web-cls-2 {
+            clip-path: url(#clip-path);
+        }
+
+        .web-cls-3 {
+            fill: currentColor;
+        }
+    </style>
+    <clipPath id="clip-path">
+        <rect class="web-cls-1" width="57" height="57"></rect>
+    </clipPath>
+</defs>
+<title>website</title>
+<g class="web-cls-2">
+    <path class="web-cls-3" d="M33.78,43.33A9.74,9.74,0,0,1,27,40.49l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.09,1.09,0,0,1,1.59,0l2.84,2.84a5,5,0,1,0,7-7l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.1,1.1,0,0,1,1.59,0l2.84,2.84a9.56,9.56,0,0,1,2.84,6.82,9.41,9.41,0,0,1-9.44,9.44M23.21,24.81l1.59-1.59a1.09,1.09,0,0,1,1.59,0l7.5,7.5a1.09,1.09,0,0,1,0,1.59L32.3,33.9a1.09,1.09,0,0,1-1.59,0l-7.5-7.5a1.09,1.09,0,0,1,0-1.59m-0.57,6.48-1.59,1.59a1.1,1.1,0,0,1-1.59,0L16.62,30a9.56,9.56,0,0,1,6.71-16.37,9.72,9.72,0,0,1,6.82,2.84L33,19.35a1.09,1.09,0,0,1,0,1.59L31.4,22.53a1.1,1.1,0,0,1-1.6,0L27,19.69a5,5,0,0,0-3.52-1.48,5,5,0,0,0-5,5,5,5,0,0,0,1.48,3.52l2.84,2.84a1.81,1.81,0,0,1-.11,1.7M28.5,0A28.5,28.5,0,1,0,57,28.5,28.5,28.5,0,0,0,28.5,0"></path>
+</g>
+</svg>
+
+        </a>
+      
+      
+    </div></p>
+        
+
           </a>
         
       </div></p>
     
-      <p>Nick is a CPython core developer, BDFL-Delegate for Python packaging interoperability standards, and a founding member of the PSF's Python Packaging Working Group.<br><br>As a member of Red Hat's Platform Engineering team, he works on software supply chain management toooling like release-monitoring.org for Fedora and Red Hat Enterprise Linux.</p>
+      <p>Graham is the author of mod_wsgi, the Apache module for hosting of Python web applications using the WSGI interface. He also has a keen interest in Docker and Platform as a Service (PaaS) technologies. He is currently a developer advocate for OpenShift at Red Hat.</p>
     <br clear="all" />
 
   

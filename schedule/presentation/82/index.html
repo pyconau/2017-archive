@@ -18,7 +18,7 @@
     
       <!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" -->
     
-    <title>PyCon AU 2017 | Presentation: Front-end integration testing with splinter</title>
+    <title>PyCon AU 2017 | Presentation: Software for the Murchison Widefield Array radio telescope</title>
 
     
       <link rel="canonical" href="https://pycon-au.org/">
@@ -770,10 +770,10 @@
 
   
 
-  <h2>Front-end integration testing with splinter</h2>
+  <h2>Software for the Murchison Widefield Array radio telescope</h2>
 
   <div class="abstract">
-    I like words. I vastly prefer writing an essay to drawing a picture, writing command line apps to writing GUI apps, and writing back-end API servers to writing front-end interactive web applications.<br><br>But what we prefer to do and what we need to get done aren't always the same thing, and even back-end developers will sometimes need to put together a basic interactive front-end, and the related test cases to make sure it keeps working as intended.<br><br>Fortunately for us, the `splinter` web application testing library offers the necessary tools for even the most JavaScript-averse developer to get started writing automated tests for their front-end components, and this presentation will walk through the essentials of getting set up to write behavioural tests for an interactive front-end as easily as you do for your back-end API server.
+    The Murchison Widefield Array (MWA) is a low frequency telescope (80-300 MHz - same as TV and radio) in the Murchison region 800 km NE of Perth. It has been running full time since mid 2013, and has collected around 13 Pbytes of data so far. The MWA has no moving parts, making it a 'software only' telescope, and this talk will describe the software. Apart from the low-level data processing (two programs written in C/C++ and CUDA), almost all of the MWA software is in Python. In total there are hundreds of processes running on dozens of machines, ranging from hardware control via digital IO and I2C on embedded Linux machines through to user interface and status/diagnostics pages using Django.
   </div>
 
   <h2>Presented by</h2>
@@ -782,50 +782,58 @@
     
   <div class="right-floating-image" >
     <div class="portrait">
-      <div style="background-image: url('https://secure.gravatar.com/avatar/f3ba3ecffd20251d73749afbfa636786');" class="portrait--img"></div>
+      <div style="background-image: url('https://secure.gravatar.com/avatar/7224e58013db9c40c2d4d507ba7f377f');" class="portrait--img"></div>
     </div>
   </div>
     
 
-    <h3>Nick Coghlan</h3> <!--- <a href="/speaker/profile/s.id/"> -->
+    <h3>Andrew Williams</h3> <!--- <a href="/speaker/profile/s.id/"> -->
 
     
       <p><div class="btn-group">
         
         
-          <a href="https://twitter.com/ncoghlan_dev" class="btn-svg" title="Nick Coghlan on twitter">
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
-    <defs>
-        <style>
-            .twtr-cls-1 {
-                fill: none;
-            }
-
-            .twtr-cls-2 {
-                clip-path: url(#clip-path);
-            }
-
-            .twtr-cls-3 {
-                fill: currentColor;
-            }
-        </style>
-        <clipPath id="clip-path" transform="translate(0 0)">
-            <rect class="twtr-cls-1" width="57" height="57"></rect>
-        </clipPath>
-    </defs>
-    <title>twitter</title>
-    <g class="twtr-cls-2">
-        <path class="twtr-cls-3" d="M39.83,22.69c0,0.25,0,.5,0,0.75,0,7.73-5.88,16.64-16.64,16.64a16.55,16.55,0,0,1-9-2.63,12.38,12.38,0,0,0,1.4.08A11.72,11.72,0,0,0,22.91,35,5.86,5.86,0,0,1,17.45,31a6,6,0,0,0,1.1.1,5.89,5.89,0,0,0,1.54-.2,5.86,5.86,0,0,1-4.69-5.73V25.07A5.82,5.82,0,0,0,18,25.8,5.85,5.85,0,0,1,16.23,18,16.59,16.59,0,0,0,28.29,24.1a5.85,5.85,0,0,1,10-5.33A11.66,11.66,0,0,0,42,17.35a5.87,5.87,0,0,1-2.57,3.24,11.65,11.65,0,0,0,3.36-.92,11.84,11.84,0,0,1-2.92,3M28.5,0A28.5,28.5,0,1,0,57,28.5,28.5,28.5,0,0,0,28.5,0" transform="translate(0 0)"></path>
-    </g>
-</svg>
         
+
+      <p><div class="btn-group">
+        
+        <a href="http://www.icrar.org/people/awilliams/" class="btn-svg" title="Homepage">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
+<defs>
+    <style>
+        .web-cls-1 {
+            fill: none;
+        }
+
+        .web-cls-2 {
+            clip-path: url(#clip-path);
+        }
+
+        .web-cls-3 {
+            fill: currentColor;
+        }
+    </style>
+    <clipPath id="clip-path">
+        <rect class="web-cls-1" width="57" height="57"></rect>
+    </clipPath>
+</defs>
+<title>website</title>
+<g class="web-cls-2">
+    <path class="web-cls-3" d="M33.78,43.33A9.74,9.74,0,0,1,27,40.49l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.09,1.09,0,0,1,1.59,0l2.84,2.84a5,5,0,1,0,7-7l-2.84-2.84a1.1,1.1,0,0,1,0-1.59l1.59-1.59a1.1,1.1,0,0,1,1.59,0l2.84,2.84a9.56,9.56,0,0,1,2.84,6.82,9.41,9.41,0,0,1-9.44,9.44M23.21,24.81l1.59-1.59a1.09,1.09,0,0,1,1.59,0l7.5,7.5a1.09,1.09,0,0,1,0,1.59L32.3,33.9a1.09,1.09,0,0,1-1.59,0l-7.5-7.5a1.09,1.09,0,0,1,0-1.59m-0.57,6.48-1.59,1.59a1.1,1.1,0,0,1-1.59,0L16.62,30a9.56,9.56,0,0,1,6.71-16.37,9.72,9.72,0,0,1,6.82,2.84L33,19.35a1.09,1.09,0,0,1,0,1.59L31.4,22.53a1.1,1.1,0,0,1-1.6,0L27,19.69a5,5,0,0,0-3.52-1.48,5,5,0,0,0-5,5,5,5,0,0,0,1.48,3.52l2.84,2.84a1.81,1.81,0,0,1-.11,1.7M28.5,0A28.5,28.5,0,1,0,57,28.5,28.5,28.5,0,0,0,28.5,0"></path>
+</g>
+</svg>
+
+        </a>
+      
+      
+    </div></p>
         
 
           </a>
         
       </div></p>
     
-      <p>Nick is a CPython core developer, BDFL-Delegate for Python packaging interoperability standards, and a founding member of the PSF's Python Packaging Working Group.<br><br>As a member of Red Hat's Platform Engineering team, he works on software supply chain management toooling like release-monitoring.org for Fedora and Red Hat Enterprise Linux.</p>
+      <p>Andrew has been working on astronomical software (instrument control, data reduction, and collaboration tools) since 1989, and almost entirely in Python since 1998 (starting with version 1.5!). After ~20 years doing research at Perth Observatory, he is now an instrumentation engineer at Curtin University, working on Monitor and Control software for the Murchison Widefield Array (MWA), a low frequency (80-300 MHz) precursor telescope for the 'Square Kilometre Array'.</p>
     <br clear="all" />
 
   
